@@ -8,17 +8,22 @@ let tuaMail = prompt("Inserisci qui la tua mail");
 //stampiamo in console la mail nel nuovo utente
 console.log("mail del nuovo utente:", tuaMail);
 
+let trovato = false;
+
 for ( let c = 0; c < 3; c++) {
 
     var mailCorrente = mail[c];
 
     if(tuaMail == mailCorrente){
-        console.log("la tua mail è giusta")
+        trovato = true; 
     } 
 }
 
-if(tuaMail != mailCorrente){
-    console.log("ma tua mail NON è valida");
+if (trovato == false){
+    
+    console.log("la tua mail NON valida.")
+} else if ( trovato == true){
+    console.log(" la tua mail è valida")
 }
 
 
