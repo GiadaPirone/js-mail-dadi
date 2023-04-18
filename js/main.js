@@ -10,15 +10,16 @@ console.log("mail del nuovo utente:", tuaMail);
 
 for ( let c = 0; c < 3; c++) {
 
-    let mailCorrente = mail[c];
+    var mailCorrente = mail[c];
 
     if(tuaMail == mailCorrente){
-        console.log("ma tua mail è valida");
-    } else if( tuaMail != mailCorrente){
-        console.log("la tua mail NON è valida");
-    }
+        console.log("la tua mail è giusta")
+    } 
 }
 
+if(tuaMail != mailCorrente){
+    console.log("ma tua mail NON è valida");
+}
 
 
 
